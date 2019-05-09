@@ -90,7 +90,8 @@ request(options, function(error, response, body) {
 });
 ```
 感觉没毛病，然鹅！历史总是惊人的相似，它！报错了！  
-（此处应有报错截图，后面再补上吧，总之报错信息就是： `request` 说 balabala 它希望收到的是 `buffer` 或 `string` 但我却给了它 `Boolean` ），纳尼？什么 `Boolean` ，哪里有 `Boolean` 了？挣扎啊挣扎，我看着 `Boolean` ，然后灵感一闪，这不是跟小程序上传遇到的问题一毛一样么...  
+![报错信息](./imgs/formdata-error.jpeg)
+总之报错信息就是： `request` 说它希望收到的是 `buffer` 或 `string` 但我却给了它 `Boolean` ，纳尼？什么 `Boolean` ，哪里有 `Boolean` 了？挣扎啊挣扎，我看着 `Boolean` ，然后灵感一闪，这不是跟小程序上传遇到的问题一毛一样么...  
 然后问题就被解决了，又可以愉快的写代码了  
 
 
